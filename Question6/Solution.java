@@ -1,4 +1,4 @@
-package Question6; 
+package Question6;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -63,23 +63,9 @@ class Solution {
           reverseCount--; 
           continue;
         }
-        if(reverseCount != 0)
-        {
-          arrNumRows.get(reverseCount-1).add(s.substring(size, size+1)); 
-          reverseCount--;  
-        }
+        arrNumRows.get(reverseCount-1).add(s.substring(size, size+1)); 
+        reverseCount--;
         size++; 
-        count++;
-        if(count == numRows)
-        {
-          if(isNotZigZagTime == false)
-          {
-            isNotZigZagTime = true; 
-            isZigZagTime = false; 
-            count = 1; 
-            reverseCount = numRows; 
-          }
-        }
       }
     }
     String stringToReturn = "";
@@ -91,11 +77,5 @@ class Solution {
       }
     }
     return stringToReturn; 
-  }
-
-  public static void main(String[]args)
-  {
-    String s = new Solution().convert("ABCD", 2);
-    System.out.println("String: " + s); 
   }
 }
