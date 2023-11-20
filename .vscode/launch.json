@@ -5,6 +5,13 @@
       "type": "java",
       "name": "Solution",
       "request": "launch",
+      "mainClass": "Question7ReversedInteger.Solution",
+      "projectName": "Leetcode-Question_46b4e2d9"
+    },
+    {
+      "type": "java",
+      "name": "Solution",
+      "request": "launch",
       "mainClass": "Question6.Solution",
       "projectName": "Leetcode-Question_46b4e2d9"
     },
